@@ -61,7 +61,88 @@ main {
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
+.resumen {
+  background: white;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
 
+.resumen h2 {
+  color: #0b3d5c;
+}
+
+.grid-resumen {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.mini-card {
+  background: #f4f7fa;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #126782;
+}
+
+.mini-card h3 {
+  color: #0b3d5c;
+  margin-top: 0;
+}
+
+.mini-card a {
+  color: #126782;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mini-card a:hover {
+  text-decoration: underline;
+}
+
+.tabla-recursos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabla-recursos th,
+.tabla-recursos td {
+  border: 1px solid #d5dce3;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabla-recursos th {
+  background: #0b3d5c;
+  color: white;
+}
+
+.tabla-recursos tr:nth-child(even) {
+  background: #f4f7fa;
+}
+
+.tabla-recursos a {
+  color: #126782;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tabla-recursos a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .grid-resumen {
+    grid-template-columns: 1fr;
+  }
+
+  .tabla-recursos {
+    font-size: 0.9rem;
+  }
+}
 footer {
   text-align: center;
   padding: 20px;
