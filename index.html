@@ -2,47 +2,269 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Módulo de Energías Renovables</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Módulo de Energías Renovables</h1>
-    <p>Carrera de Electricidad · Sexto Ciclo</p>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <h1>Módulo de Energías Renovables</h1>
+      <p>Carrera de Electricidad · Sexto Ciclo</p>
+      <p>Universidad Católica de Cuenca</p>
+    </div>
   </header>
 
-  <main>
-    <section class="card">
-      <h2>Bloque 1</h2>
-      <h3>Análisis del Recurso Energético y Modelado de Sistemas Renovables</h3>
+  <nav class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#bloque1">Bloque 1</a>
+    <a href="#bloque2">Bloque 2</a>
+    <a href="#bloque3">Bloque 3</a>
+    <a href="#recursos">Recursos</a>
+  </nav>
+
+  <main class="contenedor">
+
+    <section id="inicio" class="presentacion">
+      <h2>Descripción del módulo</h2>
+
       <p>
-        Introducción a los sistemas de energías renovables, contexto global y ecuatoriano,
-        análisis del recurso solar, eólico e hidráulico, modelado matemático e introducción
-        a MATLAB.
+        Este sitio reúne el material académico de la asignatura
+        <strong>Energías Renovables</strong>, orientado al análisis,
+        dimensionamiento, modelado, simulación y validación de sistemas
+        de generación eléctrica a partir de fuentes renovables.
       </p>
 
-      <a class="boton" href="modulos/bloque-1-energias-renovables.pdf" target="_blank">
-        Abrir PDF del Bloque 1
-      </a>
-      <a class="boton" href="modulos/bloque-2-dimensionamiento-renovables.pdf" target="_blank">
-  Abrir PDF del Bloque 2
-      </a>
-      
+      <p>
+        El módulo está organizado en tres bloques de aprendizaje, de acuerdo
+        con la planificación de la asignatura para estudiantes de sexto ciclo
+        de la carrera de Electricidad.
+      </p>
     </section>
 
+    <section class="resumen">
+      <h2>Bloques de aprendizaje</h2>
+
+      <div class="grid-resumen">
+        <article class="mini-card">
+          <h3>Bloque 1</h3>
+          <p>Análisis del recurso energético y modelado de sistemas renovables.</p>
+          <a href="#bloque1">Ver bloque</a>
+        </article>
+
+        <article class="mini-card">
+          <h3>Bloque 2</h3>
+          <p>Dimensionamiento y diseño de sistemas de energía renovable.</p>
+          <a href="#bloque2">Ver bloque</a>
+        </article>
+
+        <article class="mini-card">
+          <h3>Bloque 3</h3>
+          <p>Modelado, simulación y validación de sistemas renovables.</p>
+          <a href="#bloque3">Ver bloque</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- BLOQUE 1 -->
+    <section id="bloque1" class="card">
+      <div class="numero-bloque">Bloque 1</div>
+
+      <h2>Análisis del Recurso Energético y Modelado de Sistemas Renovables</h2>
+
+      <p>
+        En este bloque se estudian los fundamentos de las energías renovables,
+        el contexto global y ecuatoriano, el análisis del recurso solar,
+        eólico e hidráulico, así como una introducción al modelado matemático
+        y simulación en MATLAB.
+      </p>
+
+      <h3>Contenidos</h3>
+      <ul>
+        <li>Introducción a los sistemas de energías renovables.</li>
+        <li>Energías renovables en el Ecuador y contexto global.</li>
+        <li>Análisis del recurso solar.</li>
+        <li>Análisis del recurso eólico.</li>
+        <li>Fundamentos de energía hidráulica.</li>
+        <li>Modelado matemático de sistemas renovables.</li>
+        <li>Introducción a MATLAB.</li>
+      </ul>
+
+      <div class="botones">
+        <a class="boton" href="modulos/bloque-1-energias-renovables.pdf" target="_blank">
+          Abrir módulo PDF
+        </a>
+
+        <a class="boton secundario" href="modulos/presentacion-bloque-1-energias-renovables.pdf" target="_blank">
+          Abrir presentación
+        </a>
+      </div>
+    </section>
+
+    <!-- BLOQUE 2 -->
+    <section id="bloque2" class="card">
+      <div class="numero-bloque">Bloque 2</div>
+
+      <h2>Dimensionamiento y Diseño de Sistemas de Energía Renovable</h2>
+
+      <p>
+        Este bloque desarrolla los criterios técnicos para estimar la demanda
+        energética, dimensionar sistemas fotovoltaicos, eólicos e hidráulicos,
+        seleccionar componentes eléctricos, calcular pérdidas y analizar
+        configuraciones aisladas, conectadas a red e híbridas.
+      </p>
+
+      <h3>Contenidos</h3>
+      <ul>
+        <li>Estimación de la demanda energética y perfiles de carga.</li>
+        <li>Dimensionamiento de sistemas fotovoltaicos.</li>
+        <li>Dimensionamiento de sistemas eólicos.</li>
+        <li>Dimensionamiento de sistemas hidráulicos.</li>
+        <li>Selección de componentes eléctricos.</li>
+        <li>Cálculo de pérdidas y caídas de tensión.</li>
+        <li>Sistemas aislados, conectados a red e híbridos.</li>
+      </ul>
+
+      <div class="botones">
+        <a class="boton" href="modulos/bloque-2-dimensionamiento-renovables.pdf" target="_blank">
+          Abrir módulo PDF
+        </a>
+
+        <a class="boton secundario" href="modulos/presentacion-bloque-2-dimensionamiento-renovables.pdf" target="_blank">
+          Abrir presentación
+        </a>
+      </div>
+    </section>
+
+    <!-- BLOQUE 3 -->
+    <section id="bloque3" class="card">
+      <div class="numero-bloque">Bloque 3</div>
+
+      <h2>Modelado, Simulación y Validación de Sistemas de Energía Renovable</h2>
+
+      <p>
+        En este bloque se estudia el modelado matemático, la simulación,
+        el análisis de desempeño y eficiencia, la integración a la red eléctrica,
+        la evaluación técnico-económica y la sostenibilidad de los sistemas
+        de energía renovable.
+      </p>
+
+      <h3>Contenidos</h3>
+      <ul>
+        <li>Modelado de sistemas de energía renovable.</li>
+        <li>Simulación de sistemas renovables.</li>
+        <li>Análisis de desempeño y eficiencia energética.</li>
+        <li>Integración de sistemas renovables a la red eléctrica.</li>
+        <li>Evaluación técnico-económica de sistemas energéticos.</li>
+        <li>Transición energética y sostenibilidad.</li>
+      </ul>
+
+      <div class="botones">
+        <a class="boton" href="modulos/bloque-3-modelado-simulacion-validacion.pdf" target="_blank">
+          Abrir módulo PDF
+        </a>
+
+        <a class="boton secundario" href="modulos/presentacion-bloque-3-modelado-simulacion-validacion.pdf" target="_blank">
+          Abrir presentación
+        </a>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos" class="visor">
+      <h2>Recursos del módulo</h2>
+
+      <p>
+        Los materiales se encuentran disponibles en formato PDF para consulta,
+        descarga y uso académico. Las presentaciones pueden utilizarse como
+        apoyo para las clases presenciales.
+      </p>
+
+      <table class="tabla-recursos">
+        <thead>
+          <tr>
+            <th>Bloque</th>
+            <th>Módulo PDF</th>
+            <th>Presentación</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Bloque 1</td>
+            <td>
+              <a href="modulos/bloque-1-energias-renovables.pdf" target="_blank">
+                Ver módulo
+              </a>
+            </td>
+            <td>
+              <a href="modulos/presentacion-bloque-1-energias-renovables.pdf" target="_blank">
+                Ver presentación
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Bloque 2</td>
+            <td>
+              <a href="modulos/bloque-2-dimensionamiento-renovables.pdf" target="_blank">
+                Ver módulo
+              </a>
+            </td>
+            <td>
+              <a href="modulos/presentacion-bloque-2-dimensionamiento-renovables.pdf" target="_blank">
+                Ver presentación
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Bloque 3</td>
+            <td>
+              <a href="modulos/bloque-3-modelado-simulacion-validacion.pdf" target="_blank">
+                Ver módulo
+              </a>
+            </td>
+            <td>
+              <a href="modulos/presentacion-bloque-3-modelado-simulacion-validacion.pdf" target="_blank">
+                Ver presentación
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- VISTA PREVIA -->
     <section class="visor">
-      <h2>Vista previa del módulo</h2>
+      <h2>Vista previa rápida</h2>
+
+      <p>
+        En esta sección se muestra una vista previa del primer bloque.
+        Para visualizar los demás documentos, utilice los botones de cada sección.
+      </p>
+
       <iframe 
         src="modulos/bloque-1-energias-renovables.pdf"
         width="100%"
-        height="700px">
+        height="650px">
       </iframe>
     </section>
+
   </main>
 
-  <footer>
-    <p>Material académico para la asignatura Energías Renovables.</p>
+  <footer class="pie">
+    <p>
+      Material académico para la asignatura Energías Renovables · Carrera de Electricidad
+    </p>
+    <p>
+      Universidad Católica de Cuenca
+    </p>
   </footer>
+
 </body>
 </html>
